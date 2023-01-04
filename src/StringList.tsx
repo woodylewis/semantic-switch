@@ -8,6 +8,7 @@ export enum StringList {
   MOBILE_FOOTER_TRADEMARK = 'Smart Narrative is a registered trademark.',
   NETWORK_IMAGE = 'https://smartnarrative.network/images/network.jpg',
   NETWORK_LINK = '/network',
+  PANEL_LINK = '/panel',
   NETWORK_LABEL = 'NETWORK',
   NETWORK_COPY = 'A smart narrative contains data from event streams. Each stream forms a story. In this example, NFTs on the Ethereum Goerli testnet represent three types of stories: financial, systems and marketing. Click a story to see the data stored on IPFS.',
   ETH_MASTER_TOKEN_ID = '100',
