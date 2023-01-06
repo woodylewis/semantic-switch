@@ -50,29 +50,17 @@ const TopBar = () => {
           </Grid>
         </Hidden>
       </Toolbar>
-        <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              Network software for semantic ontology
-            </Typography>
-
         <Box
           sx={{
             bgcolor: 'background.paper',
             pt: 4,
-            pb: 2,
+            pb: 1,
           }}
         >
           <Container maxWidth="sm">
-            <Stack
-              sx={{ pt: 4 }}
-              direction="row"
-              spacing={2}
-              justifyContent="center"
-            >
-            <Link to={StringList.PANEL_LINK}>
-              <Button variant="contained">Main call to action</Button>
-            </Link>
-              <Button variant="outlined">Secondary action</Button>
-            </Stack>
+        <Typography variant="h6" align="center" color="text.secondary" paragraph>
+              Network software for semantic ontology
+        </Typography>
           </Container>
         </Box>
     </div>

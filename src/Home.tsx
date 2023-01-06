@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { Link } from 'react-router-dom';
 
 import Button from '@mui/material/Button';
@@ -13,7 +14,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import { StringList } from './StringList';
 
-function Copyright() {
+const Copyright = () => {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright ©'}
@@ -29,13 +30,17 @@ const cards = [1, 2, 3];
 
 const theme = createTheme();
 
-export default function Album() {
+const Home = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <main>
         <Container sx={{ py: 8 }} maxWidth="md">
-          {/* End hero unit */}
+          <Grid container>
+            <Grid item xs={12} textAlign='center'>
+              <Button component={Link} to='/panel' variant='outlined'>
+                Panel
+              </Button>
+              </Grid>
+          </Grid>
+
           <Grid container spacing={4}>
             {cards.map((card) => (
               <Grid item key={card} xs={12} sm={6} md={4}>
@@ -55,13 +60,11 @@ export default function Album() {
               </Grid>
             ))}
           </Grid>
-        </Container>
-      </main>
-      {/* Footer */}
       <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
         <Copyright />
       </Box>
-      {/* End footer */}
-    </ThemeProvider>
+        </Container>
   );
-}
+};
+
+export default Home;

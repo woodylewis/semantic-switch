@@ -8,16 +8,14 @@ import { StringList } from './StringList';
 
 const Gateway = () => {
   return (
-    <div>
       <BrowserRouter>
         <TopBar />
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route index element={<Home />} />
-          <Route path={StringList.PANEL_LINK} element={<Panel />} />
+          <Route path="/panel" element={<Panel />} />
         </Routes>
       </BrowserRouter>
-    </div>
   );
 };
 
