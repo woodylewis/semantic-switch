@@ -49,9 +49,7 @@ const TopBar = () => {
         sx={{
           bgcolor: 'background.paper',
           pt: 4,
-          pb: 2,
           borderBottom: 1,
-          marginBottom: 2,
         }}
       >
         <Typography variant='h6' align='center' color='text.secondary' paragraph>

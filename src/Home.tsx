@@ -29,12 +29,9 @@ const Home = () => {
     <Container sx={{ pt: 2 }} maxWidth='md'>
       <Grid container>
         <Grid item xs={12} textAlign='left'>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in tincidunt lacus. Morbi
-            at nibh nisi. Nunc eleifend volutpat lorem. Vestibulum vitae nisi ligula. Sed tempor eu
-            arcu ac lobortis. Morbi sagittis a ipsum et gravida. Phasellus sit amet auctor nisl, a
-            bibendum felis. Integer ut convallis lorem. Vivamus eu.
-          </Typography>
+          <Typography gutterBottom>{StringList.SEMANTIC_ONTOLOGY_1}</Typography>
+
+          <Typography>{StringList.SEMANTIC_ONTOLOGY_2}</Typography>
         </Grid>
       </Grid>
 
