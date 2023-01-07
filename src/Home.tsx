@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -21,31 +22,25 @@ const Copyright = () => {
 };
 
 const cards = [0, 1, 2];
-const heading = ['One', 'Two', 'Three'];
-const body = ['This is One', 'This is Two', 'This is Three'];
+const heading = ['Semantic Ontology', 'Semantic Switch', 'Pricing'];
 
 const Home = () => {
   return (
     <Container sx={{ pt: 2 }} maxWidth='md'>
-      <Grid container>
-        <Grid item xs={12} textAlign='left'>
-          <Typography gutterBottom>{StringList.SEMANTIC_ONTOLOGY_1}</Typography>
-
-          <Typography>{StringList.SEMANTIC_ONTOLOGY_2}</Typography>
-        </Grid>
-      </Grid>
+      <Card sx={{ marginBottom: 2, textAlign: 'center' }}>
+        <CardMedia component='img' image={StringList.NETWORK_IMAGE} height='320' />
+      </Card>
 
       <Grid container spacing={4}>
         {cards.map((card) => (
           <Grid item key={card} xs={12} sm={6} md={4}>
-            <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-              <CardContent sx={{ flexGrow: 1, py: 2 }}>
-                <Typography gutterBottom variant='h5' component='h2'>
+            <Card
+              raised={true}
+              sx={{ height: '100%', display: 'flex', flexDirection: 'column', textAlign: 'center' }}
+            >
+              <CardContent sx={{ flexGrow: 1, py: 4 }}>
+                <Button component={Link} to={StringList.PANEL_LINK} variant='contained'>
                   {heading[card]}
-                </Typography>
-                <Typography>{body[card]}</Typography>
-                <Button component={Link} to={StringList.PANEL_LINK} variant='outlined'>
-                  Panel
                 </Button>
               </CardContent>
             </Card>
