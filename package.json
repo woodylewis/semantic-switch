@@ -22,6 +22,7 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@types/react-router-dom": "latest",
+    "prettier": "^2.8.2",
     "ts-node": "^10.9.1",
     "typescript": "latest"
   },
@@ -31,9 +32,10 @@
     "test": "react-scripts test",
     "clean": "rm -rf node_modules",
     "eject": "react-scripts eject",
-    "s3":"cd build && yarn build && aws --profile wls s3 sync ./ s3://semanticswitch.network",
-    "ci":"aws --profile wls cloudfront create-invalidation --distribution-id E16S2N8A6CUCF4 --paths '/*'",
-    "gi":"aws --profile wls cloudfront get-invalidation --distribution-id E16S2N8A6CUCF4 --id "
+    "s3": "cd build && yarn build && aws --profile wls s3 sync ./ s3://semanticswitch.network",
+    "ci": "aws --profile wls cloudfront create-invalidation --distribution-id E16S2N8A6CUCF4 --paths '/*'",
+    "gi": "aws --profile wls cloudfront get-invalidation --distribution-id E16S2N8A6CUCF4 --id ",
+    "prettify": "prettier --write 'src/**/*.tsx'"
   },
   "eslintConfig": {
     "extends": [

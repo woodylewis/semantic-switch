@@ -4,7 +4,7 @@ import Gateway from './Gateway';
 const App = () => {
   return (
     <Container maxWidth='md'>
-        <Gateway />
+      <Gateway />
     </Container>
   );
 };

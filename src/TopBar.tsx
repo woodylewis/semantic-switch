@@ -1,15 +1,10 @@
-// import * as React from 'react';
 import { Link } from 'react-router-dom';
 
 import Toolbar from '@mui/material/Toolbar';
 import Hidden from '@mui/material/Hidden';
 import Grid from '@mui/material/Grid';
-import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-
 import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
 
 import { StringList } from './StringList';
 
@@ -50,19 +45,19 @@ const TopBar = () => {
           </Grid>
         </Hidden>
       </Toolbar>
-        <Box
-          sx={{
-            bgcolor: 'background.paper',
-            pt: 4,
-            pb: 1,
-          }}
-        >
-          <Container maxWidth="sm">
-        <Typography variant="h6" align="center" color="text.secondary" paragraph>
-              Network software for semantic ontology
+      <Box
+        sx={{
+          bgcolor: 'background.paper',
+          pt: 4,
+          pb: 2,
+          borderBottom: 1,
+          marginBottom: 2,
+        }}
+      >
+        <Typography variant='h6' align='center' color='text.secondary' paragraph>
+          {StringList.MAIN_SUBTITLE}
         </Typography>
-          </Container>
-        </Box>
+      </Box>
     </div>
   );
 };

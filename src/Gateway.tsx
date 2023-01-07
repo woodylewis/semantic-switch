@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import TopBar from './TopBar';
@@ -8,14 +7,14 @@ import { StringList } from './StringList';
 
 const Gateway = () => {
   return (
-      <BrowserRouter>
-        <TopBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route index element={<Home />} />
-          <Route path="/panel" element={<Panel />} />
-        </Routes>
-      </BrowserRouter>
+    <BrowserRouter>
+      <TopBar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route index element={<Home />} />
+        <Route path={StringList.PANEL_LINK} element={<Panel />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
