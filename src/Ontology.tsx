@@ -23,7 +23,7 @@ const Ontology = () => {
           </Link>
         </Grid>
         <Grid item xs={8}>
-          <Typography>TITLE</Typography>
+          <Typography>{StringList.ONTOLOGY_LABEL}</Typography>
         </Grid>
         <Grid item xs={12}>
           <Typography gutterBottom>{StringList.SEMANTIC_ONTOLOGY_1}</Typography>

@@ -22,7 +22,7 @@ const Copyright = () => {
 };
 
 const cards = [0, 1, 2];
-const heading = ['Semantic Ontology', 'Semantic Switch', 'Pricing'];
+const heading = [StringList.ONTOLOGY_LABEL, StringList.SWITCH_LABEL, StringList.PRICING_LABEL];
 const link = [StringList.ONTOLOGY_LINK, StringList.SWITCH_LINK, StringList.PRICING_LINK];
 
 const Home = () => {
