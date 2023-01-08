@@ -2,7 +2,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import TopBar from './TopBar';
 import Home from './Home';
-import Panel from './Panel';
+import Ontology from './Ontology';
+import Switch from './Switch';
+import Pricing from './Pricing';
+
 import { StringList } from './StringList';
 
 const Gateway = () => {
@@ -12,7 +15,9 @@ const Gateway = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route index element={<Home />} />
-        <Route path={StringList.PANEL_LINK} element={<Panel />} />
+        <Route path={StringList.ONTOLOGY_LINK} element={<Ontology />} />
+        <Route path={StringList.SWITCH_LINK} element={<Switch />} />
+        <Route path={StringList.PRICING_LINK} element={<Pricing />} />
       </Routes>
     </BrowserRouter>
   );

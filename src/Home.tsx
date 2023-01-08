@@ -23,6 +23,7 @@ const Copyright = () => {
 
 const cards = [0, 1, 2];
 const heading = ['Semantic Ontology', 'Semantic Switch', 'Pricing'];
+const link = [StringList.ONTOLOGY_LINK, StringList.SWITCH_LINK, StringList.PRICING_LINK];
 
 const Home = () => {
   return (
@@ -39,7 +40,7 @@ const Home = () => {
               sx={{ height: '100%', display: 'flex', flexDirection: 'column', textAlign: 'center' }}
             >
               <CardContent sx={{ flexGrow: 1, py: 4 }}>
-                <Button component={Link} to={StringList.PANEL_LINK} variant='contained'>
+                <Button component={Link} to={link[card]} variant='contained'>
                   {heading[card]}
                 </Button>
               </CardContent>
