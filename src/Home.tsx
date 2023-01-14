@@ -22,15 +22,45 @@ const Copyright = () => {
 };
 
 const cards = [0, 1, 2];
+const nodes = [0, 1, 2, 3];
 const heading = [StringList.ONTOLOGY_LABEL, StringList.SWITCH_LABEL, StringList.PRICING_LABEL];
 const link = [StringList.ONTOLOGY_LINK, StringList.SWITCH_LINK, StringList.PRICING_LINK];
 
 const Home = () => {
   return (
-    <Container sx={{ pt: 2 }} maxWidth='md'>
-      <Card sx={{ marginBottom: 2, textAlign: 'center' }}>
-        <CardMedia component='img' image={StringList.NETWORK_IMAGE} height='320' />
-      </Card>
+    <Container sx={{}} maxWidth='md'>
+      <Grid
+        container
+        direction='row'
+        alignItems='center'
+        sx={{
+          height: 200,
+          border: '1px solid grey',
+          my: 2,
+          px: 2,
+          borderRadius: 2,
+        }}
+      >
+        <Grid item xs={12}>
+          <Grid container spacing={2}>
+            {nodes.map((node) => (
+              <Grid item key={node} xs={6} sm={3}>
+                <Card
+                  raised={true}
+                  sx={{
+                    height: 120,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    textAlign: 'center',
+                  }}
+                >
+                  {node}
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </Grid>
+      </Grid>
 
       <Grid container spacing={4}>
         {cards.map((card) => (
