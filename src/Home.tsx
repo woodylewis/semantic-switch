@@ -36,7 +36,7 @@ const Home = () => {
         sx={{
           height: 200,
           border: '1px solid grey',
-          my: 2,
+          my: 4,
           px: 2,
           borderRadius: 2,
         }}
@@ -54,7 +54,7 @@ const Home = () => {
                     textAlign: 'center',
                   }}
                 >
-                  {node}
+                  &nbsp;
                 </Card>
               </Grid>
             ))}
