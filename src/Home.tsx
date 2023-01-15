@@ -9,6 +9,11 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 
+import WebhookIcon from '@mui/icons-material/Webhook';
+import CorporateFareIcon from '@mui/icons-material/CorporateFare';
+import DisplaySettingsIcon from '@mui/icons-material/DisplaySettings';
+import AccountTreeIcon from '@mui/icons-material/AccountTree';
+
 import { StringList } from './StringList';
 
 const Copyright = () => {
@@ -22,56 +27,49 @@ const Copyright = () => {
 };
 
 const cards = [0, 1, 2];
-const nodes = [0, 1, 2, 3];
+const nodes = [0, 1, 2];
 const heading = [StringList.ONTOLOGY_LABEL, StringList.SWITCH_LABEL, StringList.PRICING_LABEL];
 const link = [StringList.ONTOLOGY_LINK, StringList.SWITCH_LINK, StringList.PRICING_LINK];
+const icon = [
+  <WebhookIcon sx={{ fontSize: 40 }} />,
+  <DisplaySettingsIcon sx={{ fontSize: 40 }} />,
+  <AccountTreeIcon sx={{ fontSize: 40 }} />,
+];
 
 const Home = () => {
   return (
     <Container sx={{}} maxWidth='md'>
       <Grid
         container
-        direction='row'
-        alignItems='center'
+        spacing={4}
         sx={{
-          height: 200,
-          border: '1px solid grey',
-          my: 4,
-          px: 2,
-          borderRadius: 2,
+          mt: 1,
         }}
       >
-        <Grid item xs={12}>
-          <Grid container spacing={2}>
-            {nodes.map((node) => (
-              <Grid item key={node} xs={6} sm={3}>
-                <Card
-                  raised={true}
-                  sx={{
-                    height: 120,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    textAlign: 'center',
-                  }}
-                >
-                  &nbsp;
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-        </Grid>
-      </Grid>
-
-      <Grid container spacing={4}>
-        {cards.map((card) => (
-          <Grid item key={card} xs={12} sm={6} md={4}>
+        {nodes.map((node) => (
+          <Grid item key={node} xs={12} sm={4}>
             <Card
               raised={true}
-              sx={{ height: '100%', display: 'flex', flexDirection: 'column', textAlign: 'center' }}
+              sx={{
+                height: 160,
+                display: 'flex',
+                flexDirection: 'column',
+                textAlign: 'center',
+                pb: 2,
+              }}
             >
               <CardContent sx={{ flexGrow: 1, py: 4 }}>
-                <Button component={Link} to={link[card]} variant='contained'>
-                  {heading[card]}
+                {icon[node]}
+                <br />
+                <Button
+                  component={Link}
+                  to={link[node]}
+                  variant='contained'
+                  sx={{
+                    mt: 2,
+                  }}
+                >
+                  {heading[node]}
                 </Button>
               </CardContent>
             </Card>
