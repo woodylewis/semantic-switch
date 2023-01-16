@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import HomeIcon from '@mui/icons-material/Home';
 
 import { StringList } from './StringList';
+import Footer from './Footer';
 
 const Switch = () => {
   return (
@@ -30,6 +31,7 @@ const Switch = () => {
           <Typography>{StringList.SEMANTIC_ONTOLOGY_2}</Typography>
         </Grid>
       </Grid>
+      <Footer />
     </Container>
   );
 };

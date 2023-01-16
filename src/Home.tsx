@@ -4,7 +4,6 @@ import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 
@@ -13,18 +12,8 @@ import DisplaySettingsIcon from '@mui/icons-material/DisplaySettings';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 
 import { StringList } from './StringList';
+import Footer from './Footer';
 
-const Copyright = () => {
-  return (
-    <Typography variant='body2' color='text.secondary' align='center'>
-      {'Copyright ©'}
-      {new Date().getFullYear()}
-      &nbsp; WL Solutions LLC
-    </Typography>
-  );
-};
-
-const cards = [0, 1, 2];
 const nodes = [0, 1, 2];
 const heading = [StringList.ONTOLOGY_LABEL, StringList.SWITCH_LABEL, StringList.PRICING_LABEL];
 const link = [StringList.ONTOLOGY_LINK, StringList.SWITCH_LINK, StringList.PRICING_LINK];
@@ -83,9 +72,7 @@ const Home = () => {
           </Grid>
         ))}
       </Grid>
-      <Box sx={{ bgcolor: 'background.paper', p: 6 }} component='footer'>
-        <Copyright />
-      </Box>
+      <Footer />
     </Container>
   );
 };
