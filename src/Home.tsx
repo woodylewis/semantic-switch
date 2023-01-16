@@ -3,14 +3,12 @@ import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 
-import WebhookIcon from '@mui/icons-material/Webhook';
-import CorporateFareIcon from '@mui/icons-material/CorporateFare';
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import DisplaySettingsIcon from '@mui/icons-material/DisplaySettings';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 
@@ -31,9 +29,9 @@ const nodes = [0, 1, 2];
 const heading = [StringList.ONTOLOGY_LABEL, StringList.SWITCH_LABEL, StringList.PRICING_LABEL];
 const link = [StringList.ONTOLOGY_LINK, StringList.SWITCH_LINK, StringList.PRICING_LINK];
 const icon = [
-  <WebhookIcon sx={{ fontSize: 40 }} />,
-  <DisplaySettingsIcon sx={{ fontSize: 40 }} />,
   <AccountTreeIcon sx={{ fontSize: 40 }} />,
+  <DisplaySettingsIcon sx={{ fontSize: 40 }} />,
+  <AccountBalanceIcon sx={{ fontSize: 40 }} />,
 ];
 
 const Home = () => {
@@ -46,6 +44,15 @@ const Home = () => {
           mt: 1,
         }}
       >
+        <Grid item xs={12}>
+          <Typography gutterBottom align='center'>
+            {StringList.HOME_COPY1}
+          </Typography>
+          <Typography gutterBottom align='center'>
+            {StringList.HOME_COPY2}
+          </Typography>
+        </Grid>
+
         {nodes.map((node) => (
           <Grid item key={node} xs={12} sm={4}>
             <Card

@@ -1,6 +1,8 @@
 export enum StringList {
   MAIN_TITLE = 'Semantic Switch',
   MAIN_SUBTITLE = 'Network Software for Semantic Ontology',
+  HOME_COPY1 = 'An application service providing knowledge management.',
+  HOME_COPY2 = 'Data-driven maps of business entity relationships.',
   FOOTER_COPYRIGHT = '©2023 WL Solutions LLC. All Rights Reserved.',
   FOOTER_TRADEMARK = 'Smart Narrative is a registered trademark.',
   MOBILE_FOOTER_COPYRIGHT_ONE = '©2023 WL Solutions LLC.',
