@@ -11,7 +11,13 @@ import Footer from './Footer';
 const Switch = () => {
   return (
     <Container maxWidth='md'>
-      <Grid container>
+      <Grid
+        container
+        spacing={4}
+        sx={{
+          mt: 1,
+        }}
+      >
         <Grid item xs={4}>
           <Link
             style={{
@@ -27,8 +33,8 @@ const Switch = () => {
           <Typography>{StringList.SWITCH_LABEL}</Typography>
         </Grid>
         <Grid item xs={12}>
-          <Typography gutterBottom>{StringList.SEMANTIC_ONTOLOGY_1}</Typography>
-          <Typography>{StringList.SEMANTIC_ONTOLOGY_2}</Typography>
+          <Typography gutterBottom>{StringList.ONTOLOGY_1}</Typography>
+          <Typography>{StringList.ONTOLOGY_2}</Typography>
         </Grid>
       </Grid>
       <Footer />

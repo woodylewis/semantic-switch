@@ -8,11 +8,19 @@ import HomeIcon from '@mui/icons-material/Home';
 import { StringList } from './StringList';
 import Footer from './Footer';
 
+import Schema_Ontology from './Schema_Ontology';
+
 const Ontology = () => {
   return (
     <Container maxWidth='md'>
-      <Grid container>
-        <Grid item xs={4}>
+      <Grid
+        container
+        spacing={4}
+        sx={{
+          mt: 1,
+        }}
+      >
+        <Grid item xs={5}>
           <Link
             style={{
               textDecoration: 'none',
@@ -23,12 +31,18 @@ const Ontology = () => {
             <HomeIcon color='primary' fontSize='large' />
           </Link>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={7}>
           <Typography>{StringList.ONTOLOGY_LABEL}</Typography>
         </Grid>
         <Grid item xs={12}>
-          <Typography gutterBottom>{StringList.SEMANTIC_ONTOLOGY_1}</Typography>
-          <Typography>{StringList.SEMANTIC_ONTOLOGY_2}</Typography>
+          <Typography gutterBottom>{StringList.ONTOLOGY_1}</Typography>
+          <Typography>{StringList.ONTOLOGY_2}</Typography>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Schema_Ontology />
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Schema_Ontology />
         </Grid>
       </Grid>
       <Footer />

@@ -31,6 +31,7 @@ const Home = () => {
         spacing={4}
         sx={{
           mt: 1,
+          mb: 8,
         }}
       >
         <Grid item xs={12}>
