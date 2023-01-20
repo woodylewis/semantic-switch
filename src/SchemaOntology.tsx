@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -8,11 +9,15 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 
 import Box from '@mui/material/Box';
 
-const Schema_Ontology = () => {
+export type SchemaProps = {
+  name: string;
+};
+
+const SchemaOntology = ({ name }: SchemaProps) => {
   return (
     <Timeline position='alternate'>
       <TimelineItem>
-        <TimelineOppositeContent color='text.secondary'>Top level</TimelineOppositeContent>
+        <TimelineOppositeContent color='text.secondary'>{name}</TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
@@ -61,4 +66,8 @@ const Schema_Ontology = () => {
   );
 };
 
-export default Schema_Ontology;
+export default SchemaOntology;
+
+SchemaOntology.propTypes = {
+  name: PropTypes.string.isRequired,
+};

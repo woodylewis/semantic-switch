@@ -8,7 +8,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import { StringList } from './StringList';
 import Footer from './Footer';
 
-import Schema_Ontology from './Schema_Ontology';
+import SchemaOntology from './SchemaOntology';
 
 const Ontology = () => {
   return (
@@ -39,10 +39,10 @@ const Ontology = () => {
           <Typography>{StringList.ONTOLOGY_2}</Typography>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Schema_Ontology />
+          <SchemaOntology name='ENTERPRISE' />
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Schema_Ontology />
+          <SchemaOntology name='DIVISION' />
         </Grid>
       </Grid>
       <Footer />
