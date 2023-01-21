@@ -36,13 +36,13 @@ const Ontology = () => {
         </Grid>
         <Grid item xs={12}>
           <Typography gutterBottom>{StringList.ONTOLOGY_1}</Typography>
-          <Typography>{StringList.ONTOLOGY_2}</Typography>
+          <Typography gutterBottom>{StringList.ONTOLOGY_2}</Typography>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <SchemaOntology name='ENTERPRISE' />
+          <SchemaOntology name='CONSORTIUM' />
         </Grid>
         <Grid item xs={12} sm={6}>
-          <SchemaOntology name='DIVISION' />
+          <SchemaOntology name='COMPANY' />
         </Grid>
       </Grid>
       <Footer />

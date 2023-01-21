@@ -16,6 +16,8 @@ export enum StringList {
   ONTOLOGY_LABEL = 'ONTOLOGY',
   ONTOLOGY_1 = 'An ontology represents a set of concepts, and the relationships between those concepts. It specifies the types of things that can exist, and the relationships between those things.',
   ONTOLOGY_2 = 'Semantic ontology is concerned with the meaning of concepts, and how these meanings can be used for enterprise knowledge management.',
+  SWITCH_1 = 'A semantic switch creates a network of entities related by organizational concepts.',
+  SWITCH_2 = 'The relationships are mapped by data flowing from the entities.',
   SWITCH_LABEL = 'SWITCH',
   PRICING_LABEL = 'PRICING',
   PRICING_PRODUCT_LABEL_1 = 'STARTER',

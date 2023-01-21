@@ -7,7 +7,7 @@ const Footer = () => {
       <Typography variant='body2' color='text.secondary' align='center'>
         {'Copyright ©'}
         {new Date().getFullYear()}
-        &nbsp; WL Solutions LLC
+        &nbsp; WL Solutions LLC. All Rights Reserved
       </Typography>
     </Box>
   );
