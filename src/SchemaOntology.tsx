@@ -10,56 +10,57 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import Box from '@mui/material/Box';
 
 export type SchemaProps = {
-  name: string;
+  entityLabel: string;
+  entityName: string;
 };
 
-const SchemaOntology = ({ name }: SchemaProps) => {
+const SchemaOntology = ({ entityName, entityLabel }: SchemaProps) => {
   return (
     <Timeline position='alternate'>
       <TimelineItem>
-        <TimelineOppositeContent color='text.secondary'>{name}</TimelineOppositeContent>
+        <TimelineOppositeContent color='text.secondary'>{entityLabel}</TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Box sx={{ border: 1, textAlign: 'center' }}>content</Box>
+          <Box sx={{ border: 1, textAlign: 'center', p: 1 }}>{entityName}</Box>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent>
-          <Box sx={{ border: 1, textAlign: 'center' }}>content</Box>
+          <Box sx={{ border: 1, textAlign: 'center', p: 1 }}>content</Box>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Box sx={{ border: 1, textAlign: 'center' }}>content</Box>
+          <Box sx={{ border: 1, textAlign: 'center', p: 1 }}>content</Box>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent>
-          <Box sx={{ border: 1, textAlign: 'center' }}>content</Box>
+          <Box sx={{ border: 1, textAlign: 'center', p: 1 }}>content</Box>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Box sx={{ border: 1, textAlign: 'center' }}>content</Box>
+          <Box sx={{ border: 1, textAlign: 'center', p: 1 }}>content</Box>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent>
-          <Box sx={{ border: 1, textAlign: 'center' }}>content</Box>
+          <Box sx={{ border: 1, textAlign: 'center', p: 1 }}>content</Box>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Box sx={{ border: 1, textAlign: 'center' }}>content</Box>
+          <Box sx={{ border: 1, textAlign: 'center', p: 1 }}>content</Box>
         </TimelineContent>
       </TimelineItem>
     </Timeline>
@@ -69,5 +70,6 @@ const SchemaOntology = ({ name }: SchemaProps) => {
 export default SchemaOntology;
 
 SchemaOntology.propTypes = {
-  name: PropTypes.string.isRequired,
+  entityLabel: PropTypes.string.isRequired,
+  entityName: PropTypes.string.isRequired,
 };
