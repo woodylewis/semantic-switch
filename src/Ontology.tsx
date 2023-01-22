@@ -39,10 +39,20 @@ const Ontology = () => {
           <Typography gutterBottom>{StringList.ONTOLOGY_2}</Typography>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <SchemaOntology entityLabel='CONSORTIUM' entityName='Group 1' />
+          <SchemaOntology
+            entityLabel='CONSORTIUM'
+            entityName='Group 1'
+            nodeLabels={['Company A', 'Company B', 'Company C']}
+            nodeNames={['A', 'B', 'C']}
+          />
         </Grid>
         <Grid item xs={12} sm={6}>
-          <SchemaOntology entityLabel='COMPANY' entityName='Company Name' />
+          <SchemaOntology
+            entityLabel='COMPANY'
+            entityName='Company Name'
+            nodeLabels={['Function 1', 'Function 2', 'Function 3']}
+            nodeNames={['Finance', 'Marketing', 'Operations']}
+          />
         </Grid>
       </Grid>
       <Footer />

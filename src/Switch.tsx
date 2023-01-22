@@ -43,10 +43,20 @@ const Switch = () => {
           <Typography align='center'>{StringList.SWITCH_2}</Typography>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <SchemaOntology entityLabel='NETWORK' entityName='Group 1' />
+          <SchemaOntology
+            entityLabel='NETWORK'
+            entityName='Group 1'
+            nodeLabels={['Node 1', 'Node 2', 'Node 3']}
+            nodeNames={['Company A', 'Company B', 'Company C']}
+          />
         </Grid>
         <Grid item xs={12} sm={6}>
-          <SchemaOntology entityLabel='NODE' entityName='DATA FEED' />
+          <SchemaOntology
+            entityLabel='NODE'
+            entityName='COMPANY'
+            nodeLabels={['Finance', 'Marketing', 'Operations']}
+            nodeNames={['Data Feed 1', 'Data Feed 2', 'Data Feed 3']}
+          />
         </Grid>
       </Grid>
       <Footer />
