@@ -37,7 +37,7 @@ const Pricing = () => {
         spacing={4}
         sx={{
           mt: 1,
-          mb: 8
+          mb: 8,
         }}
       >
         <Grid item xs={5}>
@@ -56,14 +56,10 @@ const Pricing = () => {
         </Grid>
 
         <Grid item xs={12}>
-          <Typography align='center'>
-            {StringList.PRICING_COPY_1}
-          </Typography>
+          <Typography align='center'>{StringList.PRICING_COPY_1}</Typography>
         </Grid>
         <Grid item xs={12}>
-          <Typography align='center'>
-            {StringList.PRICING_COPY_2}
-          </Typography>
+          <Typography align='center'>{StringList.PRICING_COPY_2}</Typography>
         </Grid>
 
         {nodes.map((node) => (
@@ -79,9 +75,15 @@ const Pricing = () => {
               }}
             >
               <CardContent sx={{ flexGrow: 1, py: 2 }}>
-                <Typography align='center' variant='subtitle1' sx={{ mb:1 }}>{heading[node]}</Typography>
-                <Typography gutterBottom align='justify' variant='body2'>{body[node]}</Typography>
-                <Typography align='center' variant='subtitle1'>{price[node]}</Typography>
+                <Typography align='center' variant='subtitle1' sx={{ mb: 1 }}>
+                  {heading[node]}
+                </Typography>
+                <Typography gutterBottom align='justify' variant='body2'>
+                  {body[node]}
+                </Typography>
+                <Typography align='center' variant='subtitle1'>
+                  {price[node]}
+                </Typography>
               </CardContent>
             </Card>
           </Grid>
