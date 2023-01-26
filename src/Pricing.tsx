@@ -17,6 +17,18 @@ const heading = [
   StringList.PRICING_PRODUCT_LABEL_3,
 ];
 
+const body = [
+  StringList.PRICING_PRODUCT_COPY_1,
+  StringList.PRICING_PRODUCT_COPY_2,
+  StringList.PRICING_PRODUCT_COPY_3,
+];
+
+const price = [
+  StringList.PRICING_PRODUCT_PRICE_1,
+  StringList.PRICING_PRODUCT_PRICE_2,
+  StringList.PRICING_PRODUCT_PRICE_3,
+];
+
 const Pricing = () => {
   return (
     <Container maxWidth='md'>
@@ -25,9 +37,10 @@ const Pricing = () => {
         spacing={4}
         sx={{
           mt: 1,
+          mb: 8
         }}
       >
-        <Grid item xs={4}>
+        <Grid item xs={5}>
           <Link
             style={{
               textDecoration: 'none',
@@ -38,13 +51,18 @@ const Pricing = () => {
             <HomeIcon color='primary' fontSize='large' />
           </Link>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={7}>
           <Typography>{StringList.PRICING_LABEL}</Typography>
         </Grid>
 
         <Grid item xs={12}>
-          <Typography gutterBottom align='center'>
+          <Typography align='center'>
             {StringList.PRICING_COPY_1}
+          </Typography>
+        </Grid>
+        <Grid item xs={12}>
+          <Typography align='center'>
+            {StringList.PRICING_COPY_2}
           </Typography>
         </Grid>
 
@@ -60,8 +78,10 @@ const Pricing = () => {
                 pb: 2,
               }}
             >
-              <CardContent sx={{ flexGrow: 1, py: 4 }}>
-                <Typography>{heading[node]}</Typography>
+              <CardContent sx={{ flexGrow: 1, py: 2 }}>
+                <Typography align='center' variant='subtitle1' sx={{ mb:1 }}>{heading[node]}</Typography>
+                <Typography gutterBottom align='justify' variant='body2'>{body[node]}</Typography>
+                <Typography align='center' variant='subtitle1'>{price[node]}</Typography>
               </CardContent>
             </Card>
           </Grid>

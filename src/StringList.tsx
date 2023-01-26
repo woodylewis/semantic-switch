@@ -23,5 +23,12 @@ export enum StringList {
   PRICING_PRODUCT_LABEL_1 = 'STARTER',
   PRICING_PRODUCT_LABEL_2 = 'ENTERPRISE',
   PRICING_PRODUCT_LABEL_3 = 'CUSTOM',
-  PRICING_COPY_1 = 'Choose from one of three service options: ',
+  PRICING_PRODUCT_COPY_1 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lectus libero.',
+  PRICING_PRODUCT_COPY_2 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lectus libero.',
+  PRICING_PRODUCT_COPY_3 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lectus libero.',
+  PRICING_PRODUCT_PRICE_1 = '$9.99/month',
+  PRICING_PRODUCT_PRICE_2 = '$25/month',
+  PRICING_PRODUCT_PRICE_3 = '$100/month',
+  PRICING_COPY_1 = 'Build a semantic switch to provide knowledge management services.',
+  PRICING_COPY_2 = 'Choose from one of three options: ',
 }
