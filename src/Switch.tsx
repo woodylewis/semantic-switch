@@ -5,7 +5,7 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import HomeIcon from '@mui/icons-material/Home';
 
-import Box from '@mui/material/Box';
+// import Box from '@mui/material/Box';
 
 import { StringList } from './StringList';
 import Footer from './Footer';

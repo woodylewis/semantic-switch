@@ -74,16 +74,18 @@ const Pricing = () => {
                 pb: 2,
               }}
             >
-              <CardContent sx={{ flexGrow: 1, py: 2 }}>
+              <CardContent sx={{ flexGrow: 1, py: 4 }}>
                 <Typography align='center' variant='subtitle1' sx={{ mb: 1 }}>
                   {heading[node]}
                 </Typography>
                 <Typography gutterBottom align='justify' variant='body2'>
                   {body[node]}
                 </Typography>
+                {/* 
                 <Typography align='center' variant='subtitle1'>
                   {price[node]}
                 </Typography>
+                */}
               </CardContent>
             </Card>
           </Grid>

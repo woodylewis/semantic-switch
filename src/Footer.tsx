@@ -1,5 +1,6 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import { StringList } from './StringList';
 
 const Footer = () => {
   return (
@@ -7,7 +8,9 @@ const Footer = () => {
       <Typography variant='body2' color='text.secondary' align='center'>
         {'Copyright ©'}
         {new Date().getFullYear()}
-        &nbsp; WL Solutions LLC. All Rights Reserved
+        &nbsp; {StringList.FOOTER_COPYRIGHT}
+        <br />
+        {StringList.FOOTER_TRADEMARK}
       </Typography>
     </Box>
   );
